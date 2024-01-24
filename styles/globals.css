@@ -25,6 +25,6 @@ body {
   width: 100svw;
 }
 
-nav p, nav a {
+ul a, ul p {
   color: #888;
 }
