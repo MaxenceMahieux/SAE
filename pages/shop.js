@@ -1,12 +1,27 @@
 import Navbar from "@/components/Navbar";
 import ShopItem from "@/components/ShopItem";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from "react";
 
 export default function Shop() {
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-out',
+            delay: 100,
+        });
+        return () => {
+            AOS.refresh();
+        };
+    }, []);
+
     return  (
         <div className="Shop">
             <Navbar />
-            <div className="pt-20">
+            <div className="pt-20" data-aos="fade-up">
                 <p className="text-white/50 text-center my-10 font-clash text-7xl font-medium">Achats</p>
                 <div className="lg:columns-2 xl:columns-3 xl:gap-12 mb-10 xl:max-w-6xl mx-auto">
                     <ShopItem title="Plaque personnalisée" description="Choisi le texte sur le véhicule de votre choix sous condition qu'il vous appartienne déjà." ImageSrc="/img/LicencePlate.jpg" PaymentType="Acheter" />
