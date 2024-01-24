@@ -14,9 +14,28 @@
 
 /* Général */
 
-body {
+.Home {
   background-image: url("../public/img/Background.jpg");
   background-repeat: no-repeat;
+  height: 100svh;
+}
+
+.Rules {
+  background-image: url("../public/img/BackgroundClear.jpg");
+  background-repeat: no-repeat;
+  height: 100svh;
+}
+
+Header {
+  background-image: url("../public/img/BackgroundClear.jpg");
+  background-repeat: no-repeat;
+}
+
+.Shop {
+  background-image: url("../public/img/BackgroundClear.jpg");
+  background-repeat: repeat-x;
+  overflow: scroll;
+  height: 100svh;
 }
 
 .separator {
