@@ -16,24 +16,28 @@
 
 .Home {
   background-image: url("../public/img/Background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-size: cover;
   height: 100svh;
 }
 
 .Rules {
   background-image: url("../public/img/BackgroundClear.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-size: cover;
   height: 100svh;
 }
 
 Header {
   background-image: url("../public/img/BackgroundClear.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 .Shop {
   background-image: url("../public/img/BackgroundClear.jpg");
   background-repeat: repeat-x;
+  background-size: cover;
   overflow: scroll;
   height: 100svh;
 }

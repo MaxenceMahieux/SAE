@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar";
 import ShopItem from "@/components/ShopItem";
-import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {useEffect} from "react";
+import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Shop() {
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function Shop() {
             <Navbar />
             <div className="pt-20" data-aos="fade-up">
                 <p className="text-white/50 text-center my-10 font-clash text-7xl font-medium">Achats</p>
-                <div className="lg:columns-2 xl:columns-3 xl:gap-12 mb-10 xl:max-w-6xl mx-auto">
+                <div className="grid lg:grid-cols-2 xl:grid-cols-3 xl:gap-12 mb-10 xl:max-w-6xl mx-auto px-10">
                     <ShopItem title="Plaque personnalisée" description="Choisi le texte sur le véhicule de votre choix sous condition qu'il vous appartienne déjà." ImageSrc="/img/LicencePlate.jpg" PaymentType="Acheter" />
                     <ShopItem title="Nouveau véhicule" description="Tu veux une voiture ? On ajoute celle que tu veux ! En revanche, pas de véhicules armés." ImageSrc="/img/VehiclePack.jpg" PaymentType="Acheter" selected={1} />
                     <ShopItem title="Maison au choix" description="Une maison au choix avec le style que tu veux et où tu veux dans la limite du raisonnable" ImageSrc="/img/HousePreview.jpg" PaymentType="Acheter" />
