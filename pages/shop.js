@@ -37,7 +37,7 @@ export default function Shop() {
                 {/*    <ShopItem title="Plaque personnalisée" description="Choisi le texte sur le véhicule de votre choix sous condition qu'il vous appartienne déjà." ImageSrc="/img/LicencePlate.jpg" PaymentType="S'abonner" />*/}
                 {/*</div>*/}
             </main>
-            <Footer />
+            <Footer glue={1} />
         </div>
     )
 }
