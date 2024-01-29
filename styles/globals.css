@@ -23,6 +23,7 @@
   background-repeat: repeat-x;
   background-size: cover;
   height: 100svh;
+  overflow: hidden;
 }
 
 .Rules {
@@ -46,6 +47,22 @@ Header {
   height: 100svh;
 }
 
+.Discord {
+  background-image: url("../public/img/BackgroundClear.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  overflow: scroll;
+  height: 100svh;
+}
+
+.Error404 {
+  background-image: url("../public/img/BackgroundClear.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  overflow: scroll;
+  height: 100svh;
+}
+
 .separator {
   background: linear-gradient(90deg, rgba(255,255,255,0) 5%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 95%);
   height: 1px;
@@ -54,4 +71,26 @@ Header {
 
 ul a, ul p {
   color: #888;
+}
+
+.server-members {
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  25%, 75% {
+    opacity: 0.6;
+  }
+  33%, 66% {
+    opacity: 0.8;
+  }
+  40%, 60% {
+    opacity: 0.9;
+  }
 }
